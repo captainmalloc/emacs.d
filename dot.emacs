@@ -45,7 +45,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn elpy pyvenv helm-projectile osx-trash pyenv-mode helm shell-pop rust-playground rustic rust-mode material-theme magit)))
+    (realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn elpy pyvenv helm-projectile osx-trash pyenv-mode helm shell-pop rust-playground rustic rust-mode material-theme magit)))
  '(projectile-mode t nil (projectile))
  '(projectile-project-search-path (quote ("~/Documents/dev" "~/Documents/devvy")))
  '(pyenv-mode t)
