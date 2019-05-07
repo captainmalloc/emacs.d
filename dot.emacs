@@ -34,6 +34,7 @@
  '(global-hl-line-sticky-flag nil)
  '(global-linenum-mode t)
  '(global-linum-mode t)
+ '(global-undo-tree-mode t)
  '(helm-buffers-truncate-lines nil)
  '(hl-sexp-background-color "#efebe9")
  '(ido-enable-flex-matching t)
