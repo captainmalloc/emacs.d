@@ -141,6 +141,11 @@ This hook automatically activate the Emacs virtualenv corresponding to the selec
 (add-to-list 'load-path "~/Documents/dev/midas/etc/SMIME")
 (require 'smime)
 
+;; Set to the name of the file where new notes will be stored
+(setq org-mobile-inbox-for-pull "~/org/flagged.org")
+;; Set to <Dropbox root directory>/MobileOrg
+(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
+
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)))
