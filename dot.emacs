@@ -46,12 +46,9 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn elpy pyvenv helm-projectile osx-trash pyenv-mode helm shell-pop rust-playground rustic rust-mode material-theme magit)))
+    (realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
  '(projectile-mode t nil (projectile))
  '(projectile-project-search-path (quote ("~/Documents/dev" "~/Documents/devvy")))
- '(pyenv-mode t)
- '(pyvenv-mode t)
- '(pyvenv-virtualenvwrapper-python "~/.pyenv/bin/python")
  '(safe-local-variable-values (quote ((checkdoc-minor-mode . t))))
  '(shell-pop-autocd-to-working-dir nil)
  '(shell-pop-default-directory "~/Documents/dev/")
@@ -118,22 +115,6 @@
 	     `(,(rx bos "*helm" (* not-newline) "*" eos)
 	       display-buffer-in-side-window (side . right) (slot . 1) (window-width . 0.3) (window-height . 1)))
 (setq helm-buffer-details-flag nil)
-
-
-;;(require 'pyenv-mode-auto)
-;; Custom implementation from pyenv-mode-auto
-(defun my-pyenv-mode-auto-hook ()
-  "If .python-version exists, it will contains the virtualenv in the form 'midas-3.7.1', i.e. project name followed by the python version.
-This hook automatically activate the Emacs virtualenv corresponding to the selected python version 'emacs-3.7.1'"
-  (let ((pyenv-version-path (f-expand ".python-version" (projectile-project-root))))
-    (if (f-exists? pyenv-version-path)
-	(progn
-          (pyenv-mode-set (concat "emacs-" (car (reverse (split-string (car (s-lines (s-trim (f-read-text pyenv-version-path 'utf-8)))) "-")))))
-          t))))
-
-(add-hook 'find-file-hook 'my-pyenv-mode-auto-hook)
-
-(elpy-enable)
 
 ;; Clean up whitespace on a save
 ;; (add-hook 'before-save-hook 'whitespace-cleanup)
