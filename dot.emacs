@@ -44,6 +44,7 @@
  '(inhibit-startup-screen t)
  '(magit-log-section-arguments (quote ("--graph" "--color" "--decorate" "-n256")))
  '(menu-bar-mode nil)
+ '(org-directory "~/Dropbox/org")
  '(package-selected-packages
    (quote
     (realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
