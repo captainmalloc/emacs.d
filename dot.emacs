@@ -18,6 +18,8 @@
  '(ansi-color-names-vector
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(column-number-mode t)
+ '(conda-anaconda-home "~/miniconda3/")
+ '(conda-env-home-directory "~/miniconda3/")
  '(cua-mode t nil (cua-base))
  '(desktop-save-mode t)
  '(dired-sidebar-follow-file-at-point-on-toggle-open t)
@@ -47,7 +49,7 @@
  '(org-directory "~/Dropbox/org")
  '(package-selected-packages
    (quote
-    (dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
+    (direnv conda helm-company anaconda-mode company-anaconda projectile-direnv dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
  '(projectile-mode t nil (projectile))
  '(projectile-project-search-path (quote ("~/Documents/dev" "~/Documents/devvy")))
  '(safe-local-variable-values (quote ((checkdoc-minor-mode . t))))
@@ -132,4 +134,6 @@
  'org-babel-load-languages
  '((python . t)))
 
+(add-hook 'python-mode-hook 'anaconda-mode)
+(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 
