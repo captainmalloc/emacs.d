@@ -19,6 +19,7 @@
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(column-number-mode t)
  '(conda-anaconda-home "~/miniconda3/")
+ '(conda-env-autoactivate-mode t)
  '(conda-env-home-directory "~/miniconda3/")
  '(cua-mode t nil (cua-base))
  '(desktop-save-mode t)
