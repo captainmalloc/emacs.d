@@ -55,7 +55,6 @@
  '(projectile-project-search-path (quote ("~/Documents/dev" "~/Documents/devvy")))
  '(safe-local-variable-values (quote ((checkdoc-minor-mode . t))))
  '(shell-pop-autocd-to-working-dir nil)
- '(shell-pop-default-directory "~/Documents/dev/")
  '(shell-pop-full-span t)
  '(shell-pop-shell-type
    (quote
