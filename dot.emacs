@@ -50,7 +50,7 @@
  '(org-directory "~/Dropbox/org")
  '(package-selected-packages
    (quote
-    (direnv conda helm-company anaconda-mode company-anaconda projectile-direnv dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
+    (company-jedi jedi direnv conda helm-company anaconda-mode company-anaconda projectile-direnv dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
  '(projectile-mode t nil (projectile))
  '(projectile-project-search-path (quote ("~/Documents/dev" "~/Documents/devvy")))
  '(safe-local-variable-values (quote ((checkdoc-minor-mode . t))))
@@ -138,3 +138,6 @@
 (add-hook 'python-mode-hook 'anaconda-mode)
 (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 
+(add-hook 'after-init-hook 'global-company-mode)
+(with-eval-after-load 'company
+  (add-to-list 'company-backends 'company-jedi))
