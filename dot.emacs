@@ -65,7 +65,7 @@
  '(shell-pop-term-shell "/bin/bash")
  '(shell-pop-universal-key "C-t")
  '(shell-pop-window-position "bottom")
- '(shell-pop-window-size 25)
+ '(shell-pop-window-size 40)
  '(show-paren-mode t)
  '(term-scroll-to-bottom-on-output t)
  '(tool-bar-mode nil)
