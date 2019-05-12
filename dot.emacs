@@ -60,7 +60,7 @@
  '(org-directory "~/Dropbox/org")
  '(package-selected-packages
    (quote
-    (flycheck auto-complete-rst direnv conda helm-company projectile-direnv dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
+    (anaconda-mode company-anaconda company-jedi jedi jedi-core flycheck auto-complete-rst direnv conda helm-company projectile-direnv dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
  '(projectile-mode t nil (projectile))
  '(projectile-project-search-path (quote ("~/Documents/dev" "~/Documents/devvy")))
  '(safe-local-variable-values (quote ((checkdoc-minor-mode . t))))
