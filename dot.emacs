@@ -11,6 +11,12 @@
 ;; load conda.el from clone repo
 (add-to-list 'load-path "~/devvy/conda.el")
 (require 'conda)
+;; if you want interactive shell support, include:
+(conda-env-initialize-interactive-shells)
+;; if you want eshell support, include:
+(conda-env-initialize-eshell)
+;; if you want auto-activation (see below for details), include:
+(conda-env-autoactivate-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
