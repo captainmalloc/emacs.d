@@ -43,6 +43,7 @@
  '(exec-path-from-shell-variables (quote ("PATH" "MANPATH" "PYTHONPATH")))
  '(fci-rule-color "#ECEFF1")
  '(global-display-line-numbers-mode t)
+ '(global-flycheck-mode t)
  '(global-hl-line-mode t)
  '(global-hl-line-sticky-flag nil)
  '(global-linenum-mode t)
@@ -113,8 +114,6 @@
 
 (set-keyboard-coding-system nil)
 (set-terminal-coding-system nil)
-
-(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; Custom Key-Binding
 (global-set-key (kbd "M-x") 'helm-M-x)
