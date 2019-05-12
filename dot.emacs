@@ -8,6 +8,10 @@
 (when (string= system-type "darwin")
   (setq dired-use-ls-dired nil))
 
+;; load conda.el from clone repo
+(add-to-list 'load-path "~/devvy/conda.el")
+(require 'conda)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
