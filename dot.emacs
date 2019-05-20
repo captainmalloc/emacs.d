@@ -16,7 +16,7 @@
 ;; if you want eshell support, include:
 (conda-env-initialize-eshell)
 ;; if you want auto-activation (see below for details), include:
-(conda-env-autoactivate-mode t)
+(conda-env-autoactivate-mode nil)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
