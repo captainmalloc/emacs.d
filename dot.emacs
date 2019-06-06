@@ -147,4 +147,8 @@
 
 (add-hook 'after-init-hook 'global-company-mode)
 
-(eval-after-load "rst" '(auto-complete-rst-init))
+(setq auto-mode-alist
+      (append '(("\\.txt\\'" . rst-mode)
+                ("\\.rst\\'" . rst-mode)
+                ("\\.rest\\'" . rst-mode)) auto-mode-alist))
+
