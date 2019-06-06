@@ -44,6 +44,7 @@
    (quote
     ("PATH" "MANPATH" "PYTHONPATH" "NODE_VERSIONS" "NODE_VERSION_PREFIX" "BOOST_LIBRARY_PATH" "BOOST_INCLUDE" "JACOCO_LIB" "LC_CTYPE" "LC_ALL" "PS1" "CONDA_SHLVL" "CONDA_PROMPT_MODIFIER" "CONDA_EXE" "_CE_CONDA" "CONDA_PREFIX" "CONDA_PYTHON_EXE" "CONDA_DEFAULT_ENV")))
  '(fci-rule-color "#ECEFF1")
+ '(flycheck-flake8rc "~/.flake8")
  '(global-display-line-numbers-mode t)
  '(global-flycheck-mode t)
  '(global-hl-line-mode t)
