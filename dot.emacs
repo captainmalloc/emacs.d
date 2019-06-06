@@ -109,8 +109,8 @@
  ;; If there is more than one, they won't work right.
  )
 
-(exec-path-from-shell-initialize)
-
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 (set-keyboard-coding-system nil)
 (set-terminal-coding-system nil)
