@@ -8,16 +8,6 @@
 (when (string= system-type "darwin")
   (setq dired-use-ls-dired nil))
 
-;; load conda.el from clone repo
-(add-to-list 'load-path "~/devvy/conda.el")
-(require 'conda)
-;; if you want interactive shell support, include:
-(conda-env-initialize-interactive-shells)
-;; if you want eshell support, include:
-(conda-env-initialize-eshell)
-;; if you want auto-activation (see below for details), include:
-(conda-env-autoactivate-mode nil)
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -64,7 +54,7 @@
  '(org-directory "~/Dropbox/org")
  '(package-selected-packages
    (quote
-    (vue-html-mode vue-mode anaconda-mode company-anaconda company-jedi jedi jedi-core flycheck auto-complete-rst direnv conda helm-company projectile-direnv dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
+    (direnv projectile-direnv vue-html-mode vue-mode anaconda-mode company-anaconda company-jedi jedi jedi-core flycheck helm-company dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
  '(projectile-mode t nil (projectile))
  '(projectile-project-search-path (quote ("~/devvy" "~/Documents/dev")))
  '(safe-local-variable-values (quote ((checkdoc-minor-mode . t))))
