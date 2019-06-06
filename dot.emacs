@@ -68,7 +68,7 @@
  '(projectile-mode t nil (projectile))
  '(projectile-project-search-path (quote ("~/devvy" "~/Documents/dev")))
  '(safe-local-variable-values (quote ((checkdoc-minor-mode . t))))
- '(shell-pop-autocd-to-working-dir nil)
+ '(shell-pop-autocd-to-working-dir t)
  '(shell-pop-full-span t)
  '(shell-pop-shell-type
    (quote
