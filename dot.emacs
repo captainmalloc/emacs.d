@@ -152,3 +152,5 @@
                 ("\\.rst\\'" . rst-mode)
                 ("\\.rest\\'" . rst-mode)) auto-mode-alist))
 
+(setq shell-command-switch "-li")
+;; (add-hook 'term-mode-hook 'compilation-shell-minor-mode)
