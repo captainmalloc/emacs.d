@@ -133,9 +133,6 @@
 ;; Clean up whitespace on a save
 ;; (add-hook 'before-save-hook 'whitespace-cleanup)
 
-(add-to-list 'load-path "~/Documents/dev/midas/etc/SMIME")
-(require 'smime)
-
 ;; Set to the name of the file where new notes will be stored
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
 ;; Set to <Dropbox root directory>/MobileOrg
