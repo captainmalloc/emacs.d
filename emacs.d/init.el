@@ -1,3 +1,8 @@
+;;; init.el --- Load the full configuration -*- lexical-binding: t -*-
+;;; Commentary:
+
+;;; Code:
+
 (require 'package)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
 			 ("melpa" . "https://melpa.org/packages/")
@@ -54,7 +59,7 @@
  '(org-directory "~/Dropbox/org")
  '(package-selected-packages
    (quote
-    (direnv projectile-direnv vue-html-mode vue-mode anaconda-mode company-anaconda company-jedi jedi jedi-core flycheck helm-company dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
+    (treemacs treemacs-magit treemacs-projectile direnv projectile-direnv vue-html-mode vue-mode anaconda-mode company-anaconda company-jedi jedi jedi-core flycheck helm-company dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
  '(projectile-mode t nil (projectile))
  '(projectile-project-search-path (quote ("~/devvy" "~/Documents/dev")))
  '(safe-local-variable-values (quote ((checkdoc-minor-mode . t))))
@@ -147,3 +152,12 @@
 
 ;; (setq shell-command-switch "-li")
 ;; (add-hook 'term-mode-hook 'compilation-shell-minor-mode)
+
+
+(provide 'init)
+
+;; Local Variables:
+;; coding: utf-8
+;; no-byte-compile: t
+;; End:
+;;; init.el ends here
