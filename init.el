@@ -120,7 +120,8 @@
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x C-n") 'dired-sidebar-toggle-sidebar)
 (global-set-key (kbd "M-o") 'ace-window)
-
+(global-set-key (kbd "<home>") 'beginning-of-line)
+(global-set-key (kbd "<end>") 'end-of-line)
 
 ;; Windows management
 (add-to-list 'display-buffer-alist
