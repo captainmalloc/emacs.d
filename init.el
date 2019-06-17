@@ -60,6 +60,7 @@
  '(package-selected-packages
    (quote
     (realgud-lldb treemacs treemacs-magit treemacs-projectile direnv projectile-direnv vue-html-mode vue-mode anaconda-mode company-anaconda company-jedi jedi jedi-core flycheck helm-company dockerfile-mode markdown-mode realgud cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
+ '(projectile-completion-system (quote helm))
  '(projectile-mode t nil (projectile))
  '(projectile-project-search-path (quote ("~/devvy" "~/Documents/dev")))
  '(python-shell-interpreter "~/miniconda3/bin/python")
@@ -113,6 +114,8 @@
 
 (set-keyboard-coding-system nil)
 (set-terminal-coding-system nil)
+
+(helm-projectile-on)
 
 ;; Custom Key-Binding
 (global-set-key (kbd "M-x") 'helm-M-x)
