@@ -133,7 +133,7 @@
 (setq helm-buffer-details-flag nil)
 
 ;; Clean up whitespace on a save
-;; (add-hook 'before-save-hook 'whitespace-cleanup)
+(add-hook 'before-save-hook 'whitespace-cleanup)
 
 ;; Set to the name of the file where new notes will be stored
 (setq org-mobile-inbox-for-pull "~/org/flagged.org")
