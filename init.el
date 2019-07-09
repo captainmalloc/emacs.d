@@ -56,6 +56,17 @@
  '(inhibit-startup-screen t)
  '(magit-log-section-arguments (quote ("--graph" "--color" "--decorate" "-n256")))
  '(menu-bar-mode nil)
+ '(org-babel-load-languages
+   (quote
+    ((python . t)
+     (perl . t)
+     (shell . t)
+     (awk . t)
+     (calc . t)
+     (emacs-lisp . t)
+     (java . t)
+     (js . t)
+     (makefile . t))))
  '(org-directory "~/Dropbox/org")
  '(package-selected-packages
    (quote
