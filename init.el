@@ -56,7 +56,7 @@
  '(ido-use-filename-at-point (quote guess))
  '(inhibit-startup-screen t)
  '(magit-log-section-arguments (quote ("--graph" "--color" "--decorate" "-n256")))
- '(menu-bar-mode nil)
+ '(menu-bar-mode t)
  '(org-babel-load-languages
    (quote
     ((python . t)
