@@ -26,7 +26,7 @@
  '(conda-anaconda-home "~/miniconda3/")
  '(conda-env-home-directory "~/miniconda3/")
  '(cua-mode t nil (cua-base))
- '(desktop-save-mode t)
+ '(desktop-save-mode nil)
  '(dired-listing-switches "-alhF")
  '(dired-sidebar-follow-file-at-point-on-toggle-open t)
  '(dired-sidebar-open-file-in-most-recently-used-window t)
