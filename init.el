@@ -120,7 +120,7 @@
  ;; If there is more than one, they won't work right.
  )
 
-(when (memq window-system '(darwin))
+(when (string= system-type "darwin")
   (exec-path-from-shell-initialize))
 
 (set-keyboard-coding-system nil)
