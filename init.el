@@ -159,6 +159,11 @@
 (add-hook 'python-mode-hook 'anaconda-mode)
 (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 
+(add-hook 'java-mode-hook (lambda ()
+			    (setq c-basic-offset 4
+				  tab-width 4
+				  indent-tabs-mode t)))
+
 (add-hook 'after-init-hook 'global-company-mode)
 
 (setq auto-mode-alist
