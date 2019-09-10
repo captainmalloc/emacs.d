@@ -1,0 +1,11 @@
+\#*\#
+*~
+*.elc
+.cache/
+.emacs.desktop
+auto-save-list/
+eshell/
+ido.last
+projectile-bookmarks.eld
+recentf
+transient/
