@@ -84,7 +84,7 @@
     ("ansi-term" "*ansi-term*"
      (lambda nil
        (ansi-term shell-pop-term-shell)))))
- '(shell-pop-term-shell "/bin/bash")
+ '(shell-pop-term-shell "/usr/local/bin/zsh")
  '(shell-pop-universal-key "C-t")
  '(shell-pop-window-position "bottom")
  '(shell-pop-window-size 40)
