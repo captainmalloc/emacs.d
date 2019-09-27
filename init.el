@@ -72,7 +72,7 @@
  '(org-directory "~/Dropbox/org")
  '(package-selected-packages
    (quote
-    (csv-mode realgud realgud-jdb realgud-lldb rainbow-mode treemacs treemacs-magit treemacs-projectile direnv projectile-direnv vue-html-mode vue-mode anaconda-mode company-anaconda company-jedi jedi jedi-core flycheck helm-company dockerfile-mode markdown-mode cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
+    (ibuffer-vc csv-mode realgud realgud-jdb realgud-lldb rainbow-mode treemacs treemacs-magit treemacs-projectile direnv projectile-direnv vue-html-mode vue-mode anaconda-mode company-anaconda company-jedi jedi jedi-core flycheck helm-company dockerfile-mode markdown-mode cmake-mode osx-lib exec-path-from-shell org-bullets htmlize ace-window dired-sidebar yaml-mode undo-tree magit-svn helm-projectile osx-trash helm shell-pop rust-playground rustic rust-mode material-theme magit)))
  '(projectile-completion-system (quote helm))
  '(projectile-mode t nil (projectile))
  '(python-shell-interpreter "~/miniconda3/bin/python")
@@ -138,6 +138,7 @@
 (global-set-key (kbd "M-o") 'ace-window)
 (global-set-key (kbd "<home>") 'beginning-of-line)
 (global-set-key (kbd "<end>") 'end-of-line)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; Windows management
 (add-to-list 'display-buffer-alist
@@ -184,6 +185,14 @@ RDB mode is derived from `csv-mode'"
   )
 (setq auto-mode-alist
       (append '(("\\.rdb\\'" . rdb-mode)) auto-mode-alist))
+
+
+;; Enable ibuffer-vc
+(add-hook 'ibuffer-hook
+	  (lambda ()
+	    (ibuffer-vc-set-filter-groups-by-vc-root)
+	    (unless (eq ibuffer-sorting-mode 'alphabetic)
+	      (ibuffer-do-sort-by-alphabetic))))
 
 
 (server-start)
