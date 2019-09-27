@@ -185,6 +185,9 @@ RDB mode is derived from `csv-mode'"
 (setq auto-mode-alist
       (append '(("\\.rdb\\'" . rdb-mode)) auto-mode-alist))
 
+
+(server-start)
+
 (provide 'init)
 
 ;; Local Variables:
