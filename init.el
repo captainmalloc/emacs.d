@@ -176,6 +176,15 @@
 
 (rainbow-mode t)
 
+(define-derived-mode rdb-mode csv-mode "RDB"
+  "Major mode for editing Arm-RDB files of tab-separated value type.
+
+RDB mode is derived from `csv-mode'"
+  (csv-separator-chars '(?	))
+  )
+(setq auto-mode-alist
+      (append '(("\\.rdb\\'" . rdb-mode)) auto-mode-alist))
+
 (provide 'init)
 
 ;; Local Variables:
